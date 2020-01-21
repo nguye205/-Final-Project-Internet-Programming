@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- banner part start-->
+    <section class="banner_part">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="banner_slider">
+              <div class="single_banner_slider">
+                <div class="banner_text">
+                  <div class="banner_text_iner">
+                    <h5>Winter Fasion</h5>
+                    <h1>Fashion Collection 2019</h1>
+                    <a href="/category/Clothes" class="btn_1">shop now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- new arrival part here -->
+    <section class="new_arrival section_padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="arrival_tittle">
+              <h2>Best Sellers</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="new_arrival_iner filter-container">
+              <div class="single_arrivel_item weidth_1 mix shoes">
+                <img src={{best_seller[0][2]}} alt="#">
+                <div class="hover_text">
+                  <a href="/single-product.html/{{best_seller[0][1]}}">
+                    <h3>{{best_seller[0][1]}}</h3>
+                  </a>
+                  <div class="rate_icon">
+                    <a href="/single-product.html/{{best_seller[0][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[0][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[0][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[0][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[0][1]}}"> <i class="fas fa-star"></i> </a>
+                  </div>
+                  <h5>{{best_seller[0][5]}}</h5>
+                </div>
+              </div>
+              <div class="single_arrivel_item weidth_2 mix women">
+                <img src={{best_seller[1][2]}} alt="#">
+                <div class="hover_text">
+                  <a href="/single-product.html/{{best_seller[1][1]}}">
+                    <h3>{{best_seller[1][1]}}</h3>
+                  </a>
+                  <div class="rate_icon">
+                    <a href="/single-product.html/{{best_seller[1][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[1][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[1][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[1][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[1][1]}}"> <i class="fas fa-star"></i> </a>
+                  </div>
+                  <h5>{{best_seller[1][5]}}</h5>
+                </div>
+              </div>
+              <div class="single_arrivel_item weidth_3 mix shoes women">
+                <img src={{best_seller[2][2]}} alt="#">
+                <div class="hover_text">
+                  <a href="/single-product.html/{{best_seller[2][1]}}">
+                    <h3>{{best_seller[2][1]}}</h3>
+                  </a>
+                  <div class="rate_icon">
+                    <a href="/single-product.html/{{best_seller[2][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[2][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[2][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[2][1]}}"> <i class="fas fa-star"></i> </a>
+                    <a href="/single-product.html/{{best_seller[2][1]}}"> <i class="fas fa-star"></i> </a>
+                  </div>
+                  <h5>{{best_seller[2][5]}}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- new arrival part end -->
+      <!-- News Section -->
+
+      <!-- <section class="footer_part"> -->
+      <section class="new_arrival section_padding">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg">
+              <div class="arrival_tittle text-center">
+                <h2>Latest Fashion News</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container breadcrumb_bg">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="banner_slider">
+                <div class="single_banner_slider">
+                  <div class="banner_text">
+                    <div class="banner_text_iner text-center">
+                        <!-- <button onclick="/index.html/fashionNews"> NEWS HEADLINE </button> -->
+                          <body onload="fashionNews();"></body>
+                          <h2 id="head" class="text-center" onclick=getlink()> </h2>
+                          <h3 id="abs" class="text-center"> </h3>
+                          <div id="pic" class="text-center"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+
+    </section>
+
+{% endblock %}

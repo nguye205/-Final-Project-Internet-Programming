@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<div class="col-lg-6 col-md-6">
+    <div class="login_part_form">
+        <div class="login_part_form_iner">
+          <h3>Register</h3>
+          <form class="row contact_form" action="/register.html" method="POST" novalidate="novalidate">
+              <div class="col-md-12 form-group p_star">
+                {{ Loginform.hidden_tag() }}
+                {{ wtf.form_field(Loginform.username) }}
+                  <!-- <input type="text" class="form-control" id="name" name="name" value=""
+                      placeholder="Username"> -->
+              </div>
+              <div class="col-md-12 form-group p_star">
+                {{ wtf.form_field(Loginform.password) }}
+                  <!-- <input type="password" class="form-control" id="password" name="password" value=""
+                      placeholder="Password"> -->
+              </div>
+              <div class="col-md-12 form-group">
+                  <div class="creat_account d-flex align-items-center">
+                    {{ wtf.form_field(Loginform.rememberme) }}
+                      <!-- <input type="checkbox" id="f-option" name="selector">
+                      <label for="f-option">Remember me</label> -->
+                  </div>
+                  <button type="submit" value="submit" class="btn_3">
+                      Register
+                  </button>
+                  <div class="creat_account d-flex align-items-center">
+                  <p> Already have an account?
+                      <a href="/login.html"> Log in here!</a>
+                  </p>
+                  </div>
+                  <!-- <a class="lost_pass" href="#">forget password?</a> -->
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+{% endblock %}
